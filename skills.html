@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Skills</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="skillsMain" class="main">
+  <div class="banner">
+    <!-- use a class to keep banner consistent visually -->
+    <div class="bannerSection">
+      <a href="/index.html">
+        Home
+      </a>
+    </div>
+    <div class="bannerSection">
+      <a href="/spots.html">
+        Spots
+      </a>
+    </div>
+    <div class="bannerSection">
+      <a href="/skills.html">
+        Skills
+      </a>
+    </div>
+    <div class="bannerSection">
+      <a href="/favorites.html">
+        Favs
+      </a>
+    </div>
+  </div>
+  <div id="skillsHeader">
+    <h1>
+      Learn a Skill with Me!
+    </h1>
+  </div>
+  <div id="skillsDesc">
+    <div class="skills" id="skillText">
+      <div id="skillsHeader2">
+        <h2>
+          Converting Binary ↔ Octal
+        </h2>
+      </div>
+      <div id="skillInfo">
+        <p>
+          A skill that I can teach is converting between number bases. Understanding number bases is important in both
+          engineering and programming.
+        </p>
+        <hr>
+        <p>
+          Binary is a number system which uses two values, 1 and 0, to represent on and off states. It is the system
+          used by all electronics. As shown to the right, the number 11010 in binary is equal to 32 in octal. We can
+          convert by taking groups of 3 digits, starting from the right, and matching them to a conversion table. In the
+          number 010, only the second digit is 'on', so the value is equal to 2^1 or 2. Then, we take the next group,
+          which is only 2 numbers. Because both the first and second digits are 'on', or 1s, the value is equal to 2^0 +
+          2^1 or 3. Concatenating these values gives us the number 32 in octal. This conversion works because binary is
+          base 2 and octal is base 8, and 2^3 = 8.<br>
+        </p>
+        <hr>
+        <p>
+          Octal is a number which uses digits from 0-7 to represent values. To convert from octal to binary, it's much
+          like
+          the opposite conversion. You can convert octal to binary by taking each digit in the octal number, from right
+          to left,
+          and matching it to an equivalent three-digit binary string. As shown in the picture to the right, 32 in octal
+          can be
+          converted to 11010. Because 2 in binary is equal to 010 (leading 0 for three digits) and 3 is equal to 11 (no
+          leading 0),
+          concatenating the two gives us the binary number 11010.
+        </p>
+      </div>
+    </div>
+    <div class="skills" id="conversionPics">
+      <div class="skillImg" id="binToOct">
+        <img id="binToOctImg" alt="A diagram detailing a conversion of binary number 11010 to octal number 32"
+          src="https://cdn.discordapp.com/attachments/629164707223175168/1024541736955019274/bin_to_oct.png">
+      </div>
+      <div class="skillImg" id="octToBin">
+        <img id="octToBinImg" alt="A diagram detailing a conversion of octal number 32 to binary number 11010"
+          src="https://cdn.discordapp.com/attachments/629164707223175168/1024541736636272681/oct_to_bin.png">
+      </div>
+    </div>
+    <div class="skills" id="conversionTable">
+      <table>
+        <tr>
+          <th>Binary</th>
+          <th>Octal</th>
+        </tr>
+        <tr>
+          <td>000</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>001</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>010</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>011</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>100</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>101</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>110</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>111</td>
+          <td>7</td>
+        </tr>
+      </table>
+      <div id="conversion">
+        <form>
+          <label for="userConvert">Try it yourself now! What's the binary number 111111 equivalent to in
+            decimal?</label><br>
+          <input type="text" id="userConvert" name="userConvert">
+        </form>
+        <!-- spoiler text to hide the answer from user -->
+        <details>
+          <summary>Click to see the answer</summary>
+          111111 in binary is equal to 77 in octal!
+        </details>
+      </div>
+      <br>
+      &copy; Alem Bicic 2022
+    </div>
+  </div>
+</body>
+<!--
+Document checking completed. No errors or warnings to show.
+
+Used the HTML parser.
+
+Total execution time 15 milliseconds. 
+-->
+</html>
